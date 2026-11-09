@@ -2,9 +2,12 @@
 import * as bootstrap from 'bootstrap'
 
 document.addEventListener("DOMContentLoaded", () => {
+  const navButtonEl = document.querySelector("#menu-toggle");
 
-  //Eventlyssnare för hamburgermeny
-  document.querySelector("#menu-toggle").addEventListener("click", toggleMenu);
+  //eventlyssnare för hamburgermeny
+  if (navButtonEl) {
+    navButtonEl.addEventListener("click", toggleMenu);
+  }
 
 })
 
