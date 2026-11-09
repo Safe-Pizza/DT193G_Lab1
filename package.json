@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.11",
     "sass": "^1.107.1",
     "vite": "^8.3.6"
   },
