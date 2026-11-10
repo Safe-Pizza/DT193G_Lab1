@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite'
-import { resolve } from 'path'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import tailwindcss from '@tailwindcss/vite';
+import { cloudflare } from '@cloudflare/vite-plugin';
 
 export default defineConfig({
     build: {
@@ -22,7 +23,10 @@ export default defineConfig({
         },
     },
     plugins: [
-        tailwindcss()
+        tailwindcss(),
+        cloudflare({ viteEnvironment: { name: "worker" } })
     ],
-
+    environments: {
+        worker: { build: { sourcemap: true } },
+    },
 })
