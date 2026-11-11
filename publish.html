@@ -100,7 +100,17 @@
             <li>Begränsat stöd för programmeringsspråk</li>
           </ul>
       <h3>Publiceringsprocess på Cloudflare Pages</h3>
-      <p>Text om publiceringsprocessen på Cloudflare Pages</p>
+      <p>Jag valde att koppla Cloudflare till mig github-repo för denna uppgift. Det gör att när en push till main görs så kommer Cloudflare automatiskt uppdatera webbplatsen från senaste commit.</p>
+      <p>Eftersom jag valt att använda Vite som byggverktyg använde jag Cloudfares plugin med wrangler för att publicera. Med detta plugin kan man även testa den webbplatsen lokalt i Cloudeflare miljö.</p>
+      <p>Arbetssättet för publicering av denna webbplats: </p>
+      <ul>
+        <li>Push till main-branch på Github</li>
+        <li>Cloudflare känner av ändringen</li>
+        <li>Cloudflare kör vites byggprocess med kommando <code>npm run build</code></li>
+        <li>De färdiga filerna från Vites byggprocess läggs i mappen /dist</li>
+        <li>Cloudflare kör Wranglers deploy med kommando <code>npx wrangler deploy</code> som publicerar filerna från /dist</li>
+        <li>Webbplatsen har publicerats</li>
+      </ul>
     </main>
     <footer class="p-3 text-center bg-dark text-white">
       <p class="">&copy; 2026 Hanna Lindkvist</p>
