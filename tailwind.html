@@ -8,7 +8,7 @@
   <title>dt193g-lab1</title>
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans leading-normal">
   <div class="md:container md:mx-auto bg-white">
     <header class="py-10 text-center bg-mist-900 text-white mb-0">
       <h1 class="text-4xl font-semibold">DT193G - Lab1</h1>
@@ -30,7 +30,7 @@
         </ul>
       </nav>
     </div>
-    <main class="px-4">
+    <main class="px-4 md:px-14">
       <h2 class="text-3xl font-bold mt-8 mb-4">Tailwind CSS</h2>
       <p class="mb-4"><a href="https://tailwindcss.com/"
           class="text-gray-900 font-bold underline underline-offset-4 hover:opacity-75" target="_blank"
@@ -56,7 +56,9 @@
         <p class="mb-4"> Jag upplevde att Tailwind hade stor designfrihet. Det gick att på ett enkelt sätt anpassa färger, storlekar och avstånd. Då tailwind använder preflight som standard för att normalisera mellan webbläsare får man lite som en blank canvas att arbeta med
           vilket gör att man kan skapa unika designer. Dock krävs det såklart mycket klasser för detta vilket gör HTML-koden stökig och inte speciellt överskådlig.</p>
         <h4 class="text-xl font-bold mt-6 mb-4">Prestanda</h4>
-        <p class="mb-4"></p>
+        <p class="mb-4">Tailwind har lagt fokus på prestanda och genererar bara CSS utifrån de klasser som faktiskt används vilket för att man slipper ladda in onödig CSS-kod som inte används.
+          CSS-filen blir tack vare detta relativt liten och med kompirmering på det väldigt liten. I mitt vite-projekt används Gzip för komprimering och Tailwinds CSS fil blir under 5kB
+        </p>
         <h4 class="text-xl font-bold mt-6 mb-4">Dokumentation och community</h4>
         <p class="mb-4"></p>
         <h4 class="text-xl font-bold mt-6 mb-4">Anpassningsmöjligheter</h4>
@@ -212,7 +214,7 @@
         </form>
       </section>
     </main>
-    <footer class="">
+    <footer class="p-6 text-center bg-mist-900 text-white">
       <p class="">&copy; 2026 Hanna Lindkvist</p>
     </footer>
   </div>
