@@ -36,7 +36,7 @@
         </ul>
       </div>
     </nav>
-    <main class="bg-white p-4">
+    <main class="bg-white p-4 p-md-5">
       <h2>Publicering</h2>
       <p>För denna laboration har jag valt att använda <a href="https://www.cloudflare.com/"
           class="link-dark fw-bold link-offset-3 link-opacity-75-hover" target="_blank"
@@ -80,35 +80,43 @@
       </ul>
       <p>Ovan är endast exempel på vad som stöds och det finns såklart fler alternativ. Vissa ramverk kräver Cloudflare
         Workers eller annan konfiguration för att fungera korrekt</p>
-        <p><i>* - Endast delvis stöd, kan användas i byggprocessen eller genom Cloudflare Workers eller med Webassembly.</i></p>
-        <h4>Kostnad</h4>
-        <p>Cloudflare Pages erbjuder en gratis nivå med begränsad resursanvändning som passar för hobby projekt eller personliga projekt. För mer avancerade funktioner och högre prestanda kan man uppgradera till en betald plan med listade priser från $20 till $250 per månad.</p>
-        </p>
-        <h4>Vad tycker jag om Cloudflare Pages?</h4>
-        <p>Efter att ha testat Cloudflare Pages i denna laboration är min uppfattning att det har varit relativt enkelt att använda. 
-          Jag anser att det är ett bra alternativ för att publicera statiska webbplatser, med mycket dokumentation att tillgå.</p>
-          <h5>Fördelar</h5>
-          <ul>
-            <li>Gratis att använda</li>
-            <li>Automatisk publicering från GitHub</li>
-            <li>Stöd för många olika ramverk</li>
-            <li>Dokumentation</li>
-          </ul>
-          <h5>Nackdelar</h5>
-          <ul>
-            <li>Begränsad resursanvändning för gratis nivån</li>
-            <li>Begränsat stöd för programmeringsspråk</li>
-          </ul>
+      <p><i>* - Endast delvis stöd, kan användas i byggprocessen eller genom Cloudflare Workers eller med
+          Webassembly.</i></p>
+      <h4>Kostnad</h4>
+      <p>Cloudflare Pages erbjuder en gratis nivå med begränsad resursanvändning som passar för hobby projekt eller
+        personliga projekt. För mer avancerade funktioner och högre prestanda kan man uppgradera till en betald plan med
+        listade priser från $20 till $250 per månad.</p>
+      </p>
+      <h4>Vad tycker jag om Cloudflare Pages?</h4>
+      <p>Efter att ha testat Cloudflare Pages i denna laboration är min uppfattning att det har varit relativt enkelt
+        att använda.
+        Jag anser att det är ett bra alternativ för att publicera statiska webbplatser, med mycket dokumentation att
+        tillgå.</p>
+      <h5>Fördelar</h5>
+      <ul>
+        <li>Gratis att använda</li>
+        <li>Automatisk publicering från GitHub</li>
+        <li>Stöd för många olika ramverk</li>
+        <li>Dokumentation</li>
+      </ul>
+      <h5>Nackdelar</h5>
+      <ul>
+        <li>Begränsad resursanvändning för gratis nivån</li>
+        <li>Begränsat stöd för programmeringsspråk</li>
+      </ul>
       <h3>Publiceringsprocess på Cloudflare Pages</h3>
-      <p>Jag valde att koppla Cloudflare till mig github-repo för denna uppgift. Det gör att när en push till main görs så kommer Cloudflare automatiskt uppdatera webbplatsen från senaste commit.</p>
-      <p>Eftersom jag valt att använda Vite som byggverktyg använde jag Cloudfares plugin med wrangler för att publicera. Med detta plugin kan man även testa den webbplatsen lokalt i Cloudeflare miljö.</p>
+      <p>Jag valde att koppla Cloudflare till mig github-repo för denna uppgift. Det gör att när en push till main görs
+        så kommer Cloudflare automatiskt uppdatera webbplatsen från senaste commit.</p>
+      <p>Eftersom jag valt att använda Vite som byggverktyg använde jag Cloudfares plugin med wrangler för att
+        publicera. Med detta plugin kan man även testa den webbplatsen lokalt i Cloudeflare miljö.</p>
       <p>Arbetssättet för publicering av denna webbplats: </p>
       <ul>
         <li>Push till main-branch på Github</li>
         <li>Cloudflare känner av ändringen</li>
         <li>Cloudflare kör vites byggprocess med kommando <code>npm run build</code></li>
         <li>De färdiga filerna från Vites byggprocess läggs i mappen /dist</li>
-        <li>Cloudflare kör Wranglers deploy med kommando <code>npx wrangler deploy</code> som publicerar filerna från /dist</li>
+        <li>Cloudflare kör Wranglers deploy med kommando <code>npx wrangler deploy</code> som publicerar filerna från
+          /dist</li>
         <li>Webbplatsen har publicerats</li>
       </ul>
     </main>
