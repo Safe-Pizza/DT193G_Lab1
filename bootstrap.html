@@ -38,14 +38,42 @@
     </nav>
     <main class="bg-white p-4 p-md-5">
       <h2 class="">Bootstrap</h2>
-      <p class=""><a href="https://getbootstrap.com/"
-          class="link-dark fw-bold link-offset-3 link-opacity-75-hover" target="_blank"
-          rel="noopener noreferrer">Bootstrap</a> är ett ramverk.</p>
+      <p class=""><a href="https://getbootstrap.com/" class="link-dark fw-bold link-offset-3 link-opacity-75-hover"
+          target="_blank" rel="noopener noreferrer">Bootstrap</a> är ett komponentbaserat css-ramverk med färdiga
+        komponenter och stilar.
+        Bootstrap fokuserar på färdiga lösningar för tex. knappar, navigation och formulär, för att snabbt och enkelt
+        skapa och designa responsiva webbplatser.</p>
       <section class="mb-4">
         <h3 class="">Använda Bootstrap</h3>
-        <p class="">I denna laboration har jag använt <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-          class="link-dark fw-bold link-offset-3 link-opacity-75-hover" target="_blank"
-          rel="noopener noreferrer">Bootstrap 5</a></p>
+        <h4>Inlärningskurva</h4>
+        <p class="">Min upplevelse var att det var enkelt att komma igång med Bootstrap och i och med att reboot används 
+          för att automatiskt ge en grundstyling med vissa fördefinierade parametrar som margin för rubriker och paragrafer gick
+          det snabbt och lätt att skapa innehåll med ett okej grundutseende utan att ens behövt lära sig några av ramverkets klasser.
+          Det gav då möjlighet att ganska snabbt titta på och lägga till färdiga komponenter som navigation, knappar mm.          
+        </p>
+        <h4>Färdiga komponenter vs flexibilitet</h4>
+        <p class="">Bootstrap erbjuder en stor uppsättning av färdiga komponenter som knappar, formulär, kort, navigationsmenyer och mycket mer.
+          Jag upplevde att färdiga komponenter var det största fokuset och att det begränsade flexibiliteten. Vill man snabbt skapa en webbplats
+          som fungerar och är responsiv och inte lägger någon större vikt vid färger och design så är färdiga komponenter till mycket fördel.
+        </p>
+        <h4>Designfrihet</h4>
+        <p class="">Eftersom många färdiga komponenter har ett fördefinierat utseende påverkar det designfriheten.
+          Det finns möjlighet att anpassa färger, storlekar mm i Bootstrap men jag upplevde det som ganska mycket krånligare än att använda de
+          fördefinierade alternativen som finns. Detta gjorde att jag upplevde en begränsning att kunna påverka designen efter eget tycke.
+        </p>
+        <h4>Prestanda</h4>
+        <p class="">Bootstrap med sina färdiga komponenter laddar som standard (utifrån den beskrivning jag följt för att importera Bootstrap) in mer CSS och Javascript än vad som faktiskt används i webbplatsen.
+          Det finns dock flera sätt att optimera ramverket för att minska vad som laddas in och förbättra prestandan tex Lean Sass imports och Lean Javascript där man endast importerar komponentenas som används.
+          I mitt vite-projekt har jag inte gjort någon handpåläggning utan importerat hela biblioteket vilket gav en CSS-fil efter build och kompirmering på drygt 30kB, ca 6 gånger större än Tailwinds CSS-fil.
+          Upplever därför att ramverket inte har den bästa prestandan och att även fast det finns möjligheter för optimering kräver det handpåläggning. 
+        </p>
+        <h4>Dokumentation och community</h4>
+        <p class="">Bootstrap har mycket dokumentation som jag upplevde tydlig och enkel med färdiga exempel med klasser som behövs. Dokumentationen förklarade både de olika klasserna och komponenterna på ett lättförståligt sätt.
+          Det finns communityn för Bootstrap på tex Github, Discord och Reddit. Har inte själv varit aktiv i något av dessa men upplevde att det var aktivitet i de olika forumen vilket tyder på att det finns möjlighet till hjälp
+          eller bolla ideér där men andra Bootstrap användare. 
+        </p>
+        <h4>Långsiktighet</h4>
+        <p class="">Ramverket är etablerat och aktuellt och utvecklas kontirnuerligt vilket talar för stora förutsättningar att det kommer fortsätta underhållas och utvecklas framöver.</p>
         <div class="p-3 rounded d-flex flex-column w-50 border">
           <div class="d-flex justify-content-between">
             <span>Lätt att lära sig</span>
